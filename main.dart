@@ -47,7 +47,10 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build (BuildContext context) {
     return Scaffold(
-      appBar: AppBar( title: Text ("IT@WU Shop")),
+      appBar: AppBar( 
+        title: Text ("IT@WU Shop", style: TextStyle(color: Colors.white)),
+        backgroundColor: Colors.blue,
+      ),
       body: ListView.builder(
         itemCount: products.length,
         itemBuilder: (context, index) {
